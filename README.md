@@ -5,6 +5,18 @@ Only this particular combination worked properly, I tried many different combina
 that if a request is still in progress (sleeping) during shutdown, further request would queue and you can keep
 the server alive until the timeout.
 
+## Dependencies
+For the service:
+```
+pip install starlette
+```
+```
+pip install uvicorn
+```
+For unit tests:
+```
+pip install httpx
+```
 
 ## Project
 1) LSService: This contains the rest endpoint to provide the list of directory contents.
